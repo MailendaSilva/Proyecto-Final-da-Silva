@@ -9,7 +9,7 @@ const funcionCarrito=()=>{
     modalContainer.style.display="flex";
     //se crea modal
     const modalHeader = document.createElement("div");
-    //a ese div le asigno una clase dsp dar estilos
+    //me falta darle estilos ok
     modalHeader.className = "modal-header"
     //le creo su html
     modalHeader.innerHTML = `

@@ -18,7 +18,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 //recorrer array con forEach
 menu.forEach((product)=> {
-    //creo en HTML las cards
+    //creo en HTML las cards me falta darle estilos
     let content = document.createElement("div");
     content.innerHTML = `
     <h1> ${product.combo} </h1>
