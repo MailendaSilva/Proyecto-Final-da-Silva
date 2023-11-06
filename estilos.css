@@ -1,0 +1,74 @@
+body 
+{
+    margin: 0;
+    padding: 0; 
+}
+header
+{
+    background-color: black;
+    height: 15vh;
+    display:flex;
+    justify-content: space-between;
+}
+.tituloHeader
+{
+    color:antiquewhite;
+}
+.verCarrito
+{
+    align-items: center;
+    background-color: antiquewhite;
+    height: 100%;
+}
+main
+{
+    background-color: #D1F9FF;
+    height: 150vh;
+    display:flex;
+}
+footer
+{
+    background-color: rgb(0, 0, 0);
+    height: 35vh;
+    display:grid;
+    display: flex;
+}
+
+/* estilos para las clases del modal carrito */
+
+.modal-container
+{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color:#D1F9FF;
+    background-color: black;
+    display:flex;
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top:12vh;
+}
+
+.totalCompra
+{
+    font-size:35px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+.modal-header
+{
+    display:flex;
+}
+button
+{
+    cursor:pointer;
+}
+.delete-product
+{
+    cursor:pointer;
+}
