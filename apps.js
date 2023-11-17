@@ -16,10 +16,19 @@ const menu =
 //arranca vacio o con lo que hay en el local
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
+//func asincrona
+const getProductos = async () => {
+    const response = await fetch("data.json");
+    const data = await response.json();
+    console.log(data);
+};
+
+getProductos();
 //recorrer array con forEach
 menu.forEach((product)=> {
     //creo en HTML las cards me falta darle estilos
     let content = document.createElement("div");
+    content.className="card"
     content.innerHTML = `
     <h1> ${product.combo} </h1>
     <h2> ${product.precio} </h2>

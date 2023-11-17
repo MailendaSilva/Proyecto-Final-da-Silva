@@ -5,14 +5,15 @@ body
 }
 header
 {
-    background-color: black;
+    background-image: url('Banner_web.png');
     height: 15vh;
     display:flex;
     justify-content: space-between;
 }
 .tituloHeader
 {
-    color:antiquewhite;
+   
+    font-family: Arial, Helvetica, sans-serif;
 }
 .verCarrito
 {
@@ -20,18 +21,41 @@ header
     background-color: antiquewhite;
     height: 100%;
 }
-main
+main 
 {
-    background-color: #D1F9FF;
-    height: 150vh;
+    background-color: #ffffff;
+    height: 100vh;
+
+}
+
+.titulo_armatupedido
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.productos{
+    grid-area: modal-container;
     display:flex;
+    justify-content: space-around; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* NO FUNCIONA*/
+.card {
+    background-color: #fad9ef;
+    border: 1px solid #f098e8; 
+    padding: 65px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 footer
 {
-    background-color: rgb(0, 0, 0);
+    background-image: url('Banner_web.png');
     height: 35vh;
-    display:grid;
     display: flex;
+    
 }
 
 .modal-container
@@ -39,7 +63,7 @@ footer
     width: 80%;
     margin: 0 10%;
     max-height: 88vh;
-    color:#D1F9FF;
+    color:#ffffff;
     background-color: black;
     display:flex;
     flex-direction: column;

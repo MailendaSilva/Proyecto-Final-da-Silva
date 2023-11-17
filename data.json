@@ -1,0 +1,7 @@
+[
+    {"id": 1, "combo": "COMBO 1", "precio": 2500,  "descripcion": "hamburguesa simple con papas y gaseosa"},
+    {"id": 2, "combo": " COMBO 2", "precio": 2900,  "descripcion": "hamburguesa doble con papas y gaseosa"},
+    {"id": 3, "combo": "COMBO 3", "precio": 3500, "descripcion": "hamburguesa triple con papas y gaseosa"},
+    {"id": 4, "combo": "COMBO 4", "precio": 2400, "descripcion": "nuggets con papas y gaseosa"},
+    {"id": 5, "combo": "COMBO 5", "precio": 1900,  "descripcion": "menu infantil"}
+]

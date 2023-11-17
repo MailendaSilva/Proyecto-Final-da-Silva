@@ -49,9 +49,12 @@ const funcionCarrito=()=>{
 
     const totalCarrito = document.createElement("div")
     totalCarrito.className = "total-content"
-    totalCarrito.innerHTML = ` <h3> El total de su compra es: $ ${totalCompra} </h3>  `
+    totalCarrito.innerHTML = ` <h3> El total de su compra es: $ ${totalCompra} </h3>
+    <button class="finalizarCompra"> FINALIZAR COMPRA </button> `
     modalContainer.append(totalCarrito)  
- 
+    
+    //Boton finalizar compra
+    
 }
 
 // Función para eliminar un producto específico
