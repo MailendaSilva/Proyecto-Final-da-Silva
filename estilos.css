@@ -1,7 +1,8 @@
-body 
+*
 {
     margin: 0;
     padding: 0; 
+    box-sizing: border-box;
 }
 header
 {
@@ -12,7 +13,6 @@ header
 }
 .tituloHeader
 {
-   
     font-family: Arial, Helvetica, sans-serif;
 }
 .verCarrito
@@ -23,8 +23,8 @@ header
 }
 main 
 {
-    background-color: #ffffff;
-    height: 100vh;
+    background-color: rgb(230, 230, 230);
+    height: 130vh;
 
 }
 
@@ -36,26 +36,26 @@ main
 
 .productos{
     grid-area: modal-container;
-    display:flex;
-    justify-content: space-around; 
+    display:grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
-/* NO FUNCIONA*/
 .card {
     background-color: #fad9ef;
     border: 1px solid #f098e8; 
     padding: 65px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 25px; 
+        line-height: 1.5;
+
 }
 footer
 {
-    background-image: url('Banner_web.png');
-    height: 35vh;
-    display: flex;
-    
+    display:flex;
+    background-color: rgb(230, 230, 230);
+    height: 25vh;
 }
 
 .modal-container
@@ -63,28 +63,46 @@ footer
     width: 80%;
     margin: 0 10%;
     max-height: 88vh;
-    color:#ffffff;
-    background-color: black;
-    display:flex;
+    color:#000000;
+    background-color: #fad9ef;
     flex-direction: column;
-    align-items: start;
     position: fixed;
     overflow: auto;
     z-index: 9;
-    top:12vh;
+    top:15vh;
+    max-height: 80vh;
+    overflow-y: auto;
 }
-
-.totalCompra
+.carritoContent
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: px;
+    text-align:20 center;
+    padding-top: 15px;
+    padding-left: 15px;
+    
+}
+.total-content
 {
     font-size:35px;
     padding: 20px;
     text-align: center;
     padding-top: 20px;
-
+}
+h6
+{
+    font-size:20px;
 }
 .modal-header
 {
     display:flex;
+    justify-content: space-between;
+    font-size:15px;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 button
 {
@@ -93,4 +111,21 @@ button
 .delete-product
 {
     cursor:pointer;
+}
+.sumar
+{
+    cursor:pointer;
+}
+.restar
+{
+    cursor:pointer;
+}
+.footer
+{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    font-weight: 700;
 }
