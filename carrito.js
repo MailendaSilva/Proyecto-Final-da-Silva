@@ -125,7 +125,7 @@ verCarrito.addEventListener("click", funcionCarrito)
   
   //ENVIAR PEDIDO AL WPP
   const enviarWpp = (nombre, direccion, combo, totalCompra) => {
-    const numeroTelefono = "1168176099";
+    const numeroTelefono = "01168176099";
     let mensaje = "¡Hola!";
     if (nombre && direccion) {
       mensaje += ` Mi nombre es ${nombre}. Tengo listo el pedido para la dirección ${direccion} 🍔🍟
